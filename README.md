@@ -41,3 +41,9 @@ also:
 8) the script logs how it captures keypoints and matches it with the pose definition to stdout
 
 If you pose properly according to the definition, your goal has been reached and the script ends
+
+## extra stuff in this repository
+
+To see the algorithm in action also the test-inference.py script can be used. It will process two images in the input folder. The first image is wrong (wrong arm) and the second one will be recognized as matching the posture definition defined in poseDefinition.py
+
+Also you can find an example movie in the output/visualisations folder of a typical webcam session (sped up as each frame is the result of an inference which takes a second or so with cpu only). You can easily generate such thing by editing the runExercise.pu script to add an extra "out_dir='output'" argument to the inferencer instantiation (line 6), as also described in the mmpose documentation
